@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20strike Rules</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            color: #f39c12;
+        }
+        .rule {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease-in-out;
+        }
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to 20strike!</h1>
+        <p>We’re here to have fun, compete, and enjoy some friendly CS:GO matches and wagers. Let’s keep it respectful and exciting for everyone!</p>
+        
+        <img src="your-image.jpg" alt="Game Image">
+        
+        <div id="rules">
+            <h2 class="rule">1. Respect Each Other</h2>
+            <p class="rule">Treat everyone with kindness. No harassment, hate speech, or toxic behavior.</p>
+            
+            <h2 class="rule">2. Keep it Friendly Competition</h2>
+            <p class="rule">Trash talk is part of the game, but keep it light-hearted.</p>
+            
+            <h2 class="rule">3. No Cheating or Hacking</h2>
+            <p class="rule">Play fair! Any form of cheating, hacking, or exploiting bugs is strictly prohibited.</p>
+            
+            <h2 class="rule">4. Follow Wagering Guidelines</h2>
+            <p class="rule">All wagers must be agreed upon by both parties beforehand and must be honored.</p>
+            
+            <h2 class="rule">5. Use Appropriate Channels</h2>
+            <p class="rule">Keep the server organized by using the right channels for the right topics.</p>
+            
+            <h2 class="rule">6. No Spamming or Self-Promotion</h2>
+            <p class="rule">Avoid spamming messages or promoting your own content without permission.</p>
+            
+            <h2 class="rule">7. Respect Privacy</h2>
+            <p class="rule">Do not share personal information without consent.</p>
+            
+            <h2 class="rule">8. Listen to Moderators</h2>
+            <p class="rule">Mods are here to help and keep the peace.</p>
+            
+            <h2 class="rule">9. Have Fun!</h2>
+            <p class="rule">This is the most important rule. Enjoy CS:GO, make friends, and have a great time.</p>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let rules = document.querySelectorAll(".rule");
+            rules.forEach((rule, index) => {
+                setTimeout(() => {
+                    rule.classList.add("visible");
+                }, index * 300);
+            });
+        });
+    </script>
+</body>
+</html>
